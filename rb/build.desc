@@ -146,6 +146,9 @@ ruby_library(name = "ie",
     "lib/selenium/webdriver/ie/**/*.rb",
     "lib/selenium/webdriver/ie.rb"
   ],
+  resources = [
+    { "//javascript/webdriver/atoms:getAttribute": "rb/lib/selenium/webdriver/atoms/getAttribute.js"}
+  ],
   deps = [":common"]
 )
 
